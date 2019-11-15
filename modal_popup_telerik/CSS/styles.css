@@ -1,0 +1,435 @@
+﻿body {
+	font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; background:#ffffff;
+	background-image:url('../images/pattern.jpg'); background-repeat:repeat-x; height:80px; margin:0px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+/* Classes for table tr and td's */
+table {
+	padding:0px 0px 0px 0px; border:0px; border-collapse:collapse;
+}
+tr {
+	padding:0px 0px 0px 0px;
+}
+td {
+	padding:0px 0px 0px 0px;
+}
+
+/* h1,h2,h3,h4,h5,h6,pre,code,td { font-size:1em; }*/
+
+h1 { font-size:16px; font-weight:bold; padding-bottom:3px; }
+h2 { font-size:14px; font-weight:bold; padding-bottom:3px; }
+h3 { font-size:13px; font-weight:bold; padding-bottom:3px; }
+
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+	padding: 0px; width: 100%; margin: 0px auto;
+}
+#pagewrapPOPUP {
+	padding: 0px; width: 100%; margin: 0px auto;
+}
+#header {
+	width:98%; padding:0px 0px 0px 0px; color:#ffffff; margin: 0px auto; max-width:1300px; height:70px;
+}
+#header a {color:#ffffff; text-decoration:none;}
+.headerLeft {
+    float:left; vertical-align:middle; width:45%; padding:10px 0px 0px 0px;
+}
+.headerRight {
+    float:right; margin:0px 0px 0px 0px; width:45%;
+}
+.socialMedia {
+    margin:6px auto 6px auto; text-align:right;
+}
+.welcomeText { 
+    margin:2px auto 2px auto; width: 100%; font-size:13px; text-align:right; 
+}
+.logoImg {
+	float:left; margin:10px 10px 0px 0px; cursor:pointer;
+}
+#navigation {
+	width: 100%; border-top:1px #cdcdcd solid; border-bottom:1px #cdcdcd solid; padding:0px 0px 0px 0px; background-color:#ececec;
+}
+#navigation-wrap {
+	width:98%; margin: 0px auto; max-width:1300px; height:27px;
+}
+#content {
+	width: 100%; margin:5px auto 10px auto;
+}
+#content-wrap {
+	width:98%; margin: 0px auto; max-width:1300px;
+}
+.dashboardItem {
+    float:left; padding:20px 60px 20px 0px; text-align:center;
+}
+.loginHeading {
+	vertical-align:middle; text-align:center; line-height:60px; margin:0px;
+}
+.loginImage {
+	margin:20px auto 20px auto; text-align:center;
+}
+.loginOuter {
+	width:96%; margin:0px auto 0px auto;
+}
+#breadCrum {
+    padding:9px 0px 6px 0px; font-size:16px;
+}
+.breadcrum1 {
+    text-decoration:underline; color:blue;
+}
+.breadcrum2 {
+    text-decoration:none; color:green;
+}
+.breadcrum3 {
+    text-decoration:none;
+}
+.pageHeading {
+    padding:3px 0px 3px 3px; font-size:16px;
+}
+.pageHeading1 {
+    padding:3px 0px 3px 3px; font-size:16px; font-weight:bold !important;
+}
+.textBoxLogin {
+	border-radius:4px; border:1px #c8c8c8 solid; width:98%; height:40px; font-size:16px;
+}
+.textBoxPassword {
+	border-radius:4px; border:1px #c8c8c8 solid; width:98%; height:40px; font-size:16px; margin:15px 0px 15px 0px;
+}
+.buttonsP {
+	padding:0px 0px 10px 0px;
+}
+.buttonReset {
+	background-image:url('../images/button-reset-bg.jpg'); background-repeat:no-repeat; height:40px; width:465px; border:0px; cursor:pointer; color:#336797; font-size:14px; font-weight:bold; margin:10px 0px 0px 0px;
+}
+.buttonLogin {
+	background-image:url('../images/button-login-bg.jpg'); background-repeat:no-repeat; height:40px; width:465px; border:0px; cursor:pointer; color:#ffffff; font-size:14px; font-weight:bold; margin:10px 0px 0px 0px;
+}
+#divTable {
+	padding:10px 0px 10px 0px; margin:0px auto;
+}
+#divTable table {
+	width:100%;
+}
+#divTable td {
+	padding:3px 6px 3px 0px; text-align:left; vertical-align:middle; font-size:13px;
+}
+#divTable .tdAlignRight {
+	text-align:right;
+}
+#divTable .textBox {
+    width:240px; height:24px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTable .textArea {
+	width:240px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTable .dateControl {
+	width:240px; height:24px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTable .selectBox {
+	width:234px !important; height:20px !important; display: inline !important; line-height:30px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTable .buttonsTD {
+	padding:10px 0px 0px 0px;
+}
+
+
+
+#ctl00_ContentPlaceHolder1_divTable {
+	padding:10px 0px 10px 0px; margin:0px auto;
+}
+#ctl00_ContentPlaceHolder1_divTable table {
+	width:100%;
+}
+#ctl00_ContentPlaceHolder1_divTable td {
+	padding:2px 6px 2px 0px; text-align:left; vertical-align:middle; font-size:13px;
+}
+#ctl00_ContentPlaceHolder1_divTable .tdAlignRight {
+	text-align:right;
+}
+#ctl00_ContentPlaceHolder1_divTable .textBox {
+    width:200px !important; height:24px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#ctl00_ContentPlaceHolder1_divTable .dateControl {
+	width:238px !important; height:24px; vertical-align:middle; font-size:12px;
+}
+#ctl00_ContentPlaceHolder1_divTable .selectBox {
+	width:200px !important; vertical-align:middle; font-size:12px;
+}
+#ctl00_ContentPlaceHolder1_divTable .buttonsTD {
+	padding:10px 0px 0px 0px;
+}
+
+#ctl00_ContentPlaceHolder1_divTable1 {
+	padding:10px 0px 10px 0px; margin:0px auto;
+}
+#ctl00_ContentPlaceHolder1_divTable1 table {
+	width:100%;
+}
+#ctl00_ContentPlaceHolder1_divTable1 td {
+	padding:2px 6px 2px 0px; text-align:left; vertical-align:middle; font-size:13px;
+}
+#ctl00_ContentPlaceHolder1_divTable1 .tdAlignRight {
+	text-align:right;
+}
+#ctl00_ContentPlaceHolder1_divTable1 .textBox {
+    width:200px !important; height:24px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#ctl00_ContentPlaceHolder1_divTable1 .dateControl {
+	width:238px !important; height:24px; vertical-align:middle; font-size:12px;
+}
+#ctl00_ContentPlaceHolder1_divTable1 .selectBox {
+	width:200px !important; vertical-align:middle; font-size:12px;
+}
+#ctl00_ContentPlaceHolder1_divTable1 .buttonsTD {
+	padding:10px 0px 0px 0px;
+}
+
+
+
+#divTableCL {
+	padding:10px 0px 10px 0px; margin:0px auto;
+}
+#divTableCL table {
+	width:100%;
+}
+#divTableCL td {
+	padding:3px 6px 3px 10px; text-align:left; vertical-align:middle; font-size:13px;
+}
+#divTableCL .tdAlignRight {
+	text-align:right;
+}
+#divTableCL .textBox {
+    width:240px; height:24px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTableCL .textArea {
+	width:240px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTableCL .dateControl {
+	width:240px; height:24px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTableCL .selectBox {
+	width:234px !important; height:20px !important; display: inline !important; line-height:30px; vertical-align:middle; font-size:12px; border:1px #c8c8c8 solid;
+}
+#divTableCL .buttonsTD {
+	padding:10px 0px 0px 0px;
+}
+.valignmiddle {
+    vertical-align:bottom !important;
+}
+
+.addRosterDivOuter {
+    padding:20px 10px 10px 10px; background-color:#f9f9f9; border:1px #CCCCCC solid; width:820px; margin:0px 10px 10px 0px;
+}
+.addRosterWidth600px {
+    width:600px;
+}
+.addRosterTD1width {
+    width:100px; padding:0px 10px 0px 0px;
+}
+.addRosterTD2width {
+    width:260px; padding:0px 10px 0px 0px; text-align:left;
+}
+.addRosterTD3width {
+    width:220px; padding:0px 10px 0px 0px; text-align:left;
+}
+.addRosterCMTD1width {
+    width:120px; padding:0px 10px 0px 0px;
+}
+.addRosterCMTD2width {
+    width:60px; padding:0px 10px 0px 0px; text-align:left;
+}
+.addRosterCMTD3width {
+    width:100px; padding:0px 10px 0px 0px; text-align:left;
+}
+.addRosterPadding {
+    padding:12px 0px 20px 0px;
+}
+.width100 {
+    width:100%;
+}
+.width33 {
+    width:33%; vertical-align:top !important;
+}
+.height26px {
+    height:30px; vertical-align:bottom !important;
+}
+.popupWidth560px {
+    width:560px !important;
+}
+.popupWidth400px {
+    width:400px !important;
+}
+.fontBold {
+    font-weight:bold;
+}
+
+.Save { margin:0px 0px 0px 0px; width:120px; height:28px; background-color:#0367AD; color:#ffffff; font-size:14px; border:0px; cursor:pointer; border-radius:2px; }
+.Cancel { margin:0px 0px 0px 0px; width:115px; height:28px; background-color:#FFFFFF; color:#33669E; font-size:14px; border:0px; cursor:pointer; border:1px #D9D9D9 solid; border-radius:2px; }
+.SearchButton { margin:0px 0px 0px 0px; width:120px; height:22px; background-color:#0367AD; color:#ffffff; font-size:14px; border:0px; cursor:pointer; border-radius:2px; }
+.SavePopup { margin:0px 0px 0px 0px; width:100px; height:28px; background-color:#0367AD; color:#ffffff; font-size:14px; border:0px; cursor:pointer; border-radius:2px; }
+.CancelPopup { margin:0px 0px 0px 0px; width:95px; height:28px; background-color:#FFFFFF; color:#33669E; font-size:14px; border:0px; cursor:pointer; border:1px #D9D9D9 solid; border-radius:2px; }
+
+
+#main {
+	width:100%; position:relative; padding:10px 20px 10px 20px;
+}
+.clearboth { 
+	clear:both;
+}
+
+.textboxStyle { 
+	width:296px; height:30px; line-height:30px; vertical-align:middle; font-size:16px; border-radius:4px; border:1px #c8c8c8 solid;
+}
+.textboxStylePolelist4 { 
+	width:296px; height:30px; line-height:30px; vertical-align:middle; font-size:16px; border-radius:4px; border:1px #c8c8c8 solid;
+}
+.textareaStylePolelist4 { 
+	width:296px; vertical-align:middle; font-size:16px; border-radius:4px; border:1px #c8c8c8 solid;
+}
+
+.selectboxStyle { 
+	width:296px; height:30px; line-height:30px; vertical-align:middle; font-size:16px; border-radius:4px; border:1px #c8c8c8 solid;
+}
+.selectboxStyle1 { 
+	width:296px; height:30px; line-height:30px; vertical-align:middle; font-size:16px; border-radius:4px; border:1px #c8c8c8 solid;
+}
+.buttonSearch {
+	background-image:url('../images/button-submit.png'); background-repeat:no-repeat; height:30px; width:88px; border:0px; cursor:pointer; color:#336598; font-size:16px;
+}
+.buttonUpdate {
+	background-image:url('../images/button-submit.png'); background-repeat:no-repeat; height:30px; width:88px; border:0px; cursor:pointer; color:#336598; font-size:16px; margin:0px 0px 0px 10px; padding:0px 0px 3px 0px;
+}
+#MainTable1 {
+	padding:10px 0px 0px 0px;
+}
+#MainTable1 table {
+	margin:0px 10px 10px 0px;
+}
+#MainTable1 tr td {
+	padding:4px 15px 4px 0px; text-align:left; vertical-align:middle;
+}
+#MainTable2 {
+	padding:10px 0px 0px 0px;
+}
+#MainTable2 table {
+	margin:0px 10px 10px 0px; border-right:1px #d1d1d1 solid; border-left:1px #d1d1d1 solid;
+}
+#MainTable2 tr td {
+	padding:6px 8px 6px 8px; text-align:left; vertical-align:middle; font-size:14px; border-bottom:1px #d1d1d1 solid;
+}
+#MainTable2 th {
+	background-color:#e4e4e4; color:#333333; padding:12px 8px 12px 8px; border-top:1px #d1d1d1 solid; border-bottom:1px #d1d1d1 solid; margin:0px; text-align:left; font-size:14px; font-weight:bold; 
+}
+
+#footer {
+	margin: 20px auto 10px auto; clear: both; font-size:12px; width: 100%; border-top:1px #d1d1d1 solid;
+}
+#footer p {
+	text-align:center; padding:0px 0px 10px 0px;
+}
+
+
+
+.RadInput .riTextBox {
+    border-color:#c8c8c8 !important; height:24px !important;
+}
+.RadComboBox_Default, .RadComboBox_Default .rcbInput, .RadComboBoxDropDown_Default {
+    font-family:Arial !important;
+    color: #333;
+}
+table.rgMasterTable {
+	border:0px !important;
+}
+.rgRow td,
+.rgAltRow td,
+.rgEditRow td,
+.rgFooter td
+{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    font-size:14px !important;
+}
+.rgHeader {
+    font-size:13px !important;
+    font-weight:bold !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+}
+table.rgMasterTable {
+	border:0px !important;
+}
+tr.rgPager {
+	border-top:1px #ffffff solid !important;
+	border-right:1px #ffffff solid !important;
+	border-bottom:1px #ffffff solid !important;
+	border-left:1px #ffffff solid !important;
+}
+td.rgPagerCell {
+    border-width: 1px 0 0 0px !important;
+}
+table.rgMasterTable tfoot {
+    border:0px !important;
+	border-width:0 !important;
+}
+.RadMenu_Office2010Blue, .RadMenu_Office2010Blue a.rmLink {
+    font: normal 13px/23px Arial !important;
+    color: red;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 1080px) {
+	
+	#pagewrap {
+		width: 100%;
+	}
+	#content {
+		width: 96%;
+	}
+	#footer {
+		width: 96%;
+	}
+
+}
+
+/* for 700px or less */
+@media screen and (max-width: 768px) {
+
+	#pagewrap {
+		width: 100%; min-width:738px;
+	}
+	#content {
+		width: 96%; min-width:738px; float: none;
+	}
+	#footer {
+		min-width:738px; width: 96%;
+	}
+    .addRosterDivOuter {
+        width:720px;
+    }
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+
+}

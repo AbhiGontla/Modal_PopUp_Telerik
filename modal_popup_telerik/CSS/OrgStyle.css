@@ -1,0 +1,43 @@
+﻿/** Customize the canvas */
+.qsf-demo-canvas {
+    max-width: 1300px;
+    background: #ffffff url("images/marketing-bg.jpg") bottom no-repeat;
+}
+.demo-canvas-inner {
+    min-height: 650px;
+    _height: 750px;
+    background: url('images/marketing-top.jpg') no-repeat 50% top;
+    overflow: auto;
+    *position: relative;
+    top: -2px;
+    left: 4px;
+}
+
+
+/** Customize the orgchart */ 
+.demo-canvas .rocViewPort {
+    padding: 2em;
+}
+html .RadOrgChart_Default .rocGroup {
+    background-color: #805000;
+}
+:root .RadOrgChart_Default .rocGroup {
+   background-color: rgba(0, 0, 0, .5); 
+}
+html .RadOrgChart_Default .rocItem {}
+html .RadOrgChart_Default .rocItemContent,
+html .RadOrgChart_Default .rocItemTemplate {
+    background-color: transparent !important;
+}
+html .RadOrgChart_Default .rocItemText {
+    margin-bottom: 10px;
+    font: 100 20px/1 "Segoe UI" , Arial, sans-serif;
+}
+html .RadOrgChart_Default .rocImageWrap {
+    width: 60px;
+    height: 70px;
+    overflow: hidden;
+}
+html .RadOrgChart_Default .rocImageWrap img {
+    width: 60px;
+}
